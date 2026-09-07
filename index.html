@@ -1,10 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VK — personal profile and portfolio website.">
+  <meta name="theme-color" content="#0b0d12">
+  <title>VK — Profile & Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This website is hosted on GitHub Pages.</p>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="VK home">VK<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Open to opportunities</p>
+        <h1>Hi, I'm <span>VK.</span><br>I build things<br>worth using.</h1>
+        <p class="hero-text">
+          Welcome to my corner of the internet. I'm a curious builder who enjoys
+          turning ideas into useful products, learning new technology, and solving
+          interesting problems.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View my work <span>↗</span></a>
+          <a class="button ghost" href="#contact">Let's connect</a>
+        </div>
+        <div class="social-row">
+          <!-- Replace these placeholder links with your real profiles -->
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:your.email@example.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="avatar">VK</div>
+        <div class="card-lines">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="card-caption">
+          <span>PROFILE</span>
+          <strong>Creative · Curious · Consistent</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-label reveal">01 — ABOUT</div>
+      <div class="about-grid">
+        <h2 class="reveal">A little about<br><em>me.</em></h2>
+        <div class="about-copy reveal">
+          <p>
+            I'm passionate about technology and creating experiences that are
+            simple, thoughtful, and useful. This section is intentionally easy
+            to edit—replace this text with your own story, background, interests,
+            and what you're currently working on.
+          </p>
+          <p>
+            Outside of projects, I enjoy learning, experimenting with new ideas,
+            and continuously improving how I work.
+          </p>
+          <div class="facts">
+            <div><span>01</span><strong>Problem solver</strong></div>
+            <div><span>02</span><strong>Continuous learner</strong></div>
+            <div><span>03</span><strong>Builder at heart</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-label reveal">02 — SKILLS</div>
+        <div class="skills-heading reveal">
+          <h2>Tools I use<br>& things I <em>know.</em></h2>
+          <p>Replace these with your actual skills, technologies, certifications, or areas of expertise.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card reveal"><span>01</span><h3>Development</h3><p>HTML · CSS · JavaScript · Python</p></div>
+          <div class="skill-card reveal"><span>02</span><h3>Tools</h3><p>Git · GitHub · VS Code · APIs</p></div>
+          <div class="skill-card reveal"><span>03</span><h3>Product</h3><p>Problem solving · Research · Prototyping</p></div>
+          <div class="skill-card reveal"><span>04</span><h3>Learning</h3><p>AI · Cloud · Modern web technologies</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-label reveal">03 — PROJECTS</div>
+      <div class="projects-heading reveal">
+        <h2>Selected<br><em>work.</em></h2>
+        <p>Give your best projects the spotlight. Add a short result-focused description and link to the live site or repository.</p>
+      </div>
+      <div class="project-list">
+        <article class="project reveal">
+          <div class="project-number">01</div>
+          <div>
+            <p class="project-type">WEB / PERSONAL</p>
+            <h3>Project One</h3>
+            <p>Short description of what you built, the problem it solves, and the technologies you used.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+          <a class="project-link" href="#" aria-label="Open Project One">↗</a>
+        </article>
+        <article class="project reveal">
+          <div class="project-number">02</div>
+          <div>
+            <p class="project-type">APP / EXPERIMENT</p>
+            <h3>Project Two</h3>
+            <p>Another concise project summary. Focus on impact, interesting technical decisions, or what you learned.</p>
+            <div class="tags"><span>Python</span><span>API</span><span>GitHub</span></div>
+          </div>
+          <a class="project-link" href="#" aria-label="Open Project Two">↗</a>
+        </article>
+        <article class="project reveal">
+          <div class="project-number">03</div>
+          <div>
+            <p class="project-type">OPEN SOURCE / OTHER</p>
+            <h3>Project Three</h3>
+            <p>Show another strong piece of work, side project, research, or achievement here.</p>
+            <div class="tags"><span>Project</span><span>Design</span><span>Research</span></div>
+          </div>
+          <a class="project-link" href="#" aria-label="Open Project Three">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-label reveal">04 — EXPERIENCE</div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-date">2024 — PRESENT</span>
+            <div><h3>Your Current Role</h3><p>Company / Organization</p><span>Add a short description of your responsibilities and achievements.</span></div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-date">2022 — 2024</span>
+            <div><h3>Previous Role / Education</h3><p>Company / Institution</p><span>Add your most relevant experience, education, or milestone.</span></div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-date">EARLIER</span>
+            <div><h3>Another Milestone</h3><p>Organization / Project</p><span>Keep this concise and highlight what matters most.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="section-label reveal">05 — CONTACT</div>
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Have an idea?</p>
+        <h2>Let's make<br><em>something happen.</em></h2>
+        <p>I'm always happy to connect about interesting projects, opportunities, or ideas.</p>
+        <a class="button primary large" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year"></span> VK. Built with HTML, CSS & JavaScript.</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
